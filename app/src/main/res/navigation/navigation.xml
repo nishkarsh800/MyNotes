@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment2">
+
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.techprojects.activity.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_addFragment2"
+            app:destination="@id/addFragment2" />
+        <action
+            android:id="@+id/action_mainFragment2_to_editFragment2"
+            app:destination="@id/editFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment2"
+        android:name="com.example.techprojects.activity.fragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment2_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment2"
+        android:name="com.example.techprojects.activity.fragments.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment2_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+</navigation>
