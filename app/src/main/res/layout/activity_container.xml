@@ -12,7 +12,7 @@
     android:name="androidx.navigation.fragment.NavHostFragment"
     app:navGraph="@navigation/navigation"
     app:defaultNavHost= "true"
-    android:id="@+id/TODO" />
+    android:id="@+id/container_activity" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

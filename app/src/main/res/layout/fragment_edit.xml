@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".activity.fragments.EditFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_edit"
+        android:background="@color/black"
+        app:title="Edit"
+        app:titleTextColor="@color/white">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/save_instance"
+            android:layout_gravity="end"
+            android:src="@drawable/baseline_check_24"
+            android:layout_marginEnd="20dp">
+
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_title"
+        android:padding="20dp"
+        android:layout_below="@id/toolbar_edit"
+        android:layout_margin="10dp"
+        android:hint="Edit Title">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_desc"
+        android:padding="20dp"
+        android:layout_below="@id/edit_title"
+        android:layout_margin="10dp"
+        android:hint="Edit description">
+
+    </EditText>
+
+</RelativeLayout>
