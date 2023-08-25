@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/purple_700"
     android:layout_margin="5dp">
 
     <RelativeLayout
@@ -12,7 +15,8 @@
             android:id="@+id/title_list_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
             android:text="Title"
             android:textColor="@color/black"
             android:textSize="25sp">
@@ -26,7 +30,8 @@
             android:layout_below="@id/title_list_item"
             android:ellipsize="end"
             android:maxLines="1"
-            android:padding="10dp"
+            android:padding="5dp"
+            android:layout_marginStart="15dp"
             android:text="Description">
 
         </TextView>
